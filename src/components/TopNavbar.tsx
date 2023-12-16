@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -10,7 +10,9 @@ import {
   Button,
 } from "reactstrap";
 
-const TopNavbar = () => {
+interface TopNavbarProps {}
+
+const TopNavbar: FC<TopNavbarProps> = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 

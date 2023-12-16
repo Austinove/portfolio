@@ -1,17 +1,17 @@
-import React from "react";
+import { FC } from "react";
 import "./App.css";
 import TopNavbar from "./components/TopNavbar";
 import AboutMe from "./components/AboutMe";
 
-function App() {
+interface AppProps {}
+
+const App: FC<AppProps> = () => {
   return (
     <>
       <TopNavbar />
-      <div className="px-4 pt-3">
-        <AboutMe />
-      </div>
+      <AboutMe />
     </>
   );
-}
+};
 
 export default App;

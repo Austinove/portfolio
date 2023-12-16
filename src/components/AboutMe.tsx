@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import {
   Card,
   CardBody,
@@ -6,10 +6,11 @@ import {
   CardTitle,
   CardText,
   Button,
-  CardSubtitle,
 } from "reactstrap";
 
-const AboutMe = () => {
+interface AboutMeProps {}
+
+const AboutMe: FC<AboutMeProps> = () => {
   return (
     <div className="container-fluid">
       <div className="row custom-section">
